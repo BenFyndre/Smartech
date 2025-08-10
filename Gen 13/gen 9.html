@@ -1,0 +1,745 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Tech Solutions</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/your-fontawesome-kit.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="product 9.css">
+    <link rel="stylesheet" href="fireworks.css">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#5D5CDE',
+                        secondary: '#4F46E5'
+                    }
+                }
+            }
+        }
+        
+    </script>    
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+        body { font-family: 'Inter', sans-serif; }
+        .hero-gradient { background: linear-gradient(135deg, #5D5CDE  0%, #4F46E5 100%); }
+        .service-card { transition: all 0.3s ease; }
+        .service-card:hover { transform: translateY(-8px); }
+        .nav-link { transition: color 0.3s ease; }
+        .nav-link:hover { color: #5D5CDE; }
+        .animate-fade-in { animation: fadeIn 0.6s ease-in-out; }
+        @keyframes fadeIn { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
+        .mobile-menu { transition: all 0.3s ease; }
+        .mobile-menu.open { opacity: 1; visibility: visible; }
+        .mobile-menu:not(.open) { opacity: 0; visibility: hidden; }
+    </style>
+</head>
+<body class="bg-white dark:bg-gray-900 text-gray-900 dark:text-white transition-colors duration-300">
+    <!-- Navigation -->
+    <nav class="fixed top-0 left-0 right-0 bg-white dark:bg-gray-900 shadow-lg z-50 border-b border-gray-200 dark:border-gray-700">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center py-4">
+                <div class="flex-shrink-0">
+                    <h1 class="text-xl font-bold text-primary cursor-pointer">
+                        Smart Tech Solutions
+                    </h1>
+                    <p class="text-xs text-gray-600 dark:text-gray-400">Your all time computer system solutions</p>
+                </div>
+                
+                <!-- Desktop Navigation -->
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-8">
+                        <a href="#home" class="nav-link font-medium" >Home</a>
+                        <a href="#services" class="nav-link font-medium">Services</a>
+                        <a href="#products" class="nav-link font-medium">Products</a>
+                        <a href="#about" class="nav-link font-medium">About</a>
+                        <a href="#contact" class="nav-link font-medium">Contact</a>
+                        <a href="#courses" class="nav-link font-medium">Courses</a>
+                    </div>
+                </div>
+                
+                <!-- Mobile menu button -->
+                <div class="md:hidden">
+                    <button id="mobile-menu-btn" class="text-gray-600 dark:text-gray-400 hover:text-primary focus:outline-none">
+                        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Mobile Navigation Menu -->
+        <div id="mobile-menu" class="mobile-menu md:hidden absolute top-full left-0 right-0 bg-white dark:bg-gray-900 border-b border-gray-200 dark:border-gray-700">
+            <div class="px-2 pt-2 pb-3 space-y-1">
+                <a href="#home" class="block px-3 py-2 nav-link font-medium">Home</a>
+                <a href="#services" class="block px-3 py-2 nav-link font-medium">Services</a>
+                <a href="#products" class="block px-3 py-2 nav-link font-medium">Products</a>
+                <a href="#about" class="block px-3 py-2 nav-link font-medium">About</a>
+                <a href="#contact" class="block px-3 py-2 nav-link font-medium">Contact</a>
+                <a href="#courses" class="block px-3 py-2 nav-link font-medium">Courses</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Home Section -->
+        <section id="home" class="main-section" style="background: linear-gradient(135deg, #5D5CDE 0%, #4F46E5 100%);">
+
+            <!-- Hero Section -->
+            <div class="hero-gradient text-white py-20">
+                <div class="max-w-7xl mx-auto px-4 sm:px-4 lg:px-8 text-center">
+                    <h1 class="text-4xl md:text-6xl font-bold mb-6 animate-fade-in">
+                        Smart Tech Solutions
+                    </h1>
+                    <p class="text-xl md:text-2xl mb-8 opacity-90 animate-fade-in">
+                        Your all time computer system solutions
+                    </p>
+                    <p class="text-lg mb-10 max-w-2xl mx-auto opacity-80 animate-fade-in">
+                        Professional IT services for businesses and individuals. Expert solutions for all your technology needs.
+                    </p>
+
+                    <div class="flex flex-col sm:flex-row gap-4 justify-center items-center animate-fade-in">
+                        <a href="#services" class="inline-block bg-white text-primary font-medium px-6 py-3 rounded-lg shadow-lg hover:bg-gray-100 transition-colors mr-19">Our Services</a>                    
+                        <a href="#contact" class="inline-block bg-transparent border-2 border-white text-white font-medium px-6 py-3 rounded-lg hover:bg-white/10 transition-colors">Contact Us</a>
+                        
+                    </div>
+                </div>
+            </div>
+
+            <!-- Quick Services Overview -->
+            <div class="py-16 bg-gray-50 dark:bg-gray-800">
+                <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                    <h2 class="text-3xl font-bold text-center mb-12">Why Choose Us?</h2>
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                        <div class="text-center">
+                            <div class="w-16 h-16 bg-primary rounded-full flex items-center justify-center mx-auto mb-4">
+                                <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                                </svg>
+                            </div>
+                            <h3 class="text-lg font-semibold mb-2">Expert Technicians</h3>
+                            <p class="text-gray-600 dark:text-gray-400">Years of experience and expertise</p>
+                        </div>
+                        <div class="text-center">
+                            <div class="w-16 h-16 bg-primary rounded-full flex items-center justify-center mx-auto mb-4">
+                                <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+                                </svg>
+                            </div>
+                            <h3 class="text-lg font-semibold mb-2">Fast Service</h3>
+                            <p class="text-gray-600 dark:text-gray-400">Minimal downtime guaranteed</p>
+                        </div>
+                        <div class="text-center">
+                            <div class="w-16 h-16 bg-primary rounded-full flex items-center justify-center mx-auto mb-4">
+                                <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1"></path>
+                                </svg>
+                            </div>
+                            <h3 class="text-lg font-semibold mb-2">Affordable Rates</h3>
+                            <p class="text-gray-600 dark:text-gray-400">Transparent pricing</p>
+                        </div>
+                        <div class="text-center">
+                            <div class="w-16 h-16 bg-primary rounded-full flex items-center justify-center mx-auto mb-4">
+                                <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path>
+                                </svg>
+                            </div>
+                            <h3 class="text-lg font-semibold mb-2">Satisfaction Guaranteed</h3>
+                            <p class="text-gray-600 dark:text-gray-400">Quality service you can trust</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        
+        <section id="services" class="main-section">
+            <div class="py-20">
+                <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                    <div class="text-center mb-16">
+                        <h1 class="text-3xl font-bold mb-4">Our Services</h1>
+                        <p class="text-xl text-gray-800 dark:text-gray-400">Professional IT services for businesses and individuals</p>
+                    </div>
+
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                        <!-- Service Cards -->
+                        <div class="service-card bg-white dark:bg-gray-800 rounded-lg shadow-lg p-6 border border-gray-200 dark:border-gray-700">
+                            <div class="w-12 h-12 bg-primary rounded-lg flex items-center justify-center mb-4">
+                                <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 3v2m6-2v2M9 19v2m6-2v2M5 9H3m2 6H3m18-6h-2m2 6h-2M7 19h10a2 2 0 002-2V7a2 2 0 00-2-2H7a2 2 0 00-2 2v10a2 2 0 002 2zM9 9h6v6H9V9z"></path>
+                                </svg>
+                            </div>
+                            <h3 class="text-xl font-semibold mb-3">OS Installation</h3>
+                            <p class="text-gray-800 dark:text-gray-400 mb-4">Expert installation of Windows, Linux, and MacOS on all computer systems.</p>
+                            <ul class="text-sm text-black-900 dark:text-gray-400 space-y-1">
+                                <li>• Windows installation & setup</li>
+                                <li>• Linux distributions installation</li>
+                                <li>• MacOS setup & migration</li>
+                            </ul>
+                        </div>
+
+                        <div class="service-card bg-white dark:bg-gray-800 rounded-lg shadow-lg p-6 border border-gray-200 dark:border-gray-700">
+                            <div class="w-12 h-12 bg-primary rounded-lg flex items-center justify-center mb-4">
+                                <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"></path>
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                                </svg>
+                            </div>
+                            <h3 class="text-xl font-semibold mb-3">Computer Troubleshooting</h3>
+                            <p class="text-gray-800 dark:text-gray-400 mb-4">Diagnosing and fixing hardware and software issues to get your system back up and running.</p>
+                            <ul class="text-sm text-black-600 dark:text-gray-400 space-y-1">
+                                <li>• Hardware diagnostics & repair</li>
+                                <li>• Software error resolution</li>
+                                <li>• Performance optimization</li>
+                            </ul>
+                        </div>
+
+                        <div class="service-card bg-white dark:bg-gray-800 rounded-lg shadow-lg p-6 border border-gray-200 dark:border-gray-700">
+                            <div class="w-12 h-12 bg-primary rounded-lg flex items-center justify-center mb-4">
+                                <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path>
+                                </svg>
+                            </div>
+                            <h3 class="text-xl font-semibold mb-3">Software Installation</h3>
+                            <p class="text-gray-800 dark:text-gray-400 mb-4">Professional installation and updates of software applications for your needs.</p>
+                            <ul class="text-sm text-black-600 dark:text-gray-400 space-y-1">
+                                <li>• Application setup & configuration</li>
+                                <li>• Software updates & patching</li>
+                                <li>• Driver installation & updates</li>
+                            </ul>
+                        </div>
+
+                        <div class="service-card bg-white dark:bg-gray-800 rounded-lg shadow-lg p-6 border border-gray-200 dark:border-gray-700">
+                            <div class="w-12 h-12 bg-primary rounded-lg flex items-center justify-center mb-4">
+                                <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path>
+                                </svg>
+                            </div>
+                            <h3 class="text-xl font-semibold mb-3">Virus Removal & Security</h3>
+                            <p class="text-gray-800 dark:text-gray-400 mb-4">Comprehensive virus removal and cybersecurity solutions to protect your data.</p>
+                            <ul class="text-sm text-black-600 dark:text-gray-400 space-y-1">
+                                <li>• Virus & malware removal</li>
+                                <li>• Security software installation</li>
+                                <li>• Preventative security measures</li>
+                            </ul>
+                        </div>
+
+                        <div class="service-card bg-white dark:bg-gray-800 rounded-lg shadow-lg p-6 border border-gray-200 dark:border-gray-700">
+                            <div class="w-12 h-12 bg-primary rounded-lg flex items-center justify-center mb-4">
+                                <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"></path>
+                                </svg>
+                            </div>
+                            <h3 class="text-xl font-semibold mb-3">Computer Repair</h3>
+                            <p class="text-gray-800 dark:text-gray-400 mb-4">Bringing dead parts back to life with expert diagnostics and repair.</p>
+                            <ul class="text-sm text-black-600 dark:text-gray-400 space-y-1">
+                                <li>• Laptop Screen Replacement</li>
+                                <li>• Motherboard Repair & Replacement</li>
+                                <li>• Laptop Casing & Body Repair</li>
+                            </ul>
+                        </div>
+
+                        <div class="service-card bg-white dark:bg-gray-800 rounded-lg shadow-lg p-6 border border-gray-200 dark:border-gray-700">
+                            <div class="w-12 h-12 bg-primary rounded-lg flex items-center justify-center mb-4">
+                                <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 7v10c0 2.21 3.582 4 8 4s8-1.79 8-4V7M4 7c0 2.21 3.582 4 8 4s8-1.79 8-4M4 7c0-2.21 3.582-4 8-4s8 1.79 8 4m0 5c0 2.21-3.582 4-8 4s-8-1.79-8-4"></path>
+                                </svg>
+                            </div>
+                            <h3 class="text-xl font-semibold mb-3">Data Backup & Recovery</h3>
+                            <p class="text-gray-800 dark:text-gray-400 mb-4">Secure data backup solutions and recovery services to protect your valuable information.</p>
+                            <ul class="text-sm text-black-600 dark:text-gray-400 space-y-1">
+                                <li>• Automated backup solutions</li>
+                                <li>• Data recovery from damaged media</li>
+                                <li>• Cloud backup configuration</li>
+                            </ul>
+                        </div>
+
+                        <div class="service-card bg-white dark:bg-gray-800 rounded-lg shadow-lg p-6 border border-gray-200 dark:border-gray-700">
+                            <div class="w-12 h-12 bg-primary rounded-lg flex items-center justify-center mb-4">
+                                <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.111 16.404a5.5 5.5 0 017.778 0M12 20h.01m-7.08-7.071c3.904-3.905 10.236-3.905 14.141 0M1.394 9.393c5.857-5.857 15.355-5.857 21.213 0"></path>
+                                </svg>
+                            </div>
+                            <h3 class="text-xl font-semibold mb-3">Network Setup</h3>
+                            <p class="text-gray-800 dark:text-gray-400 mb-4">Professional network installation, configuration, and maintenance services.</p>
+                            <ul class="text-sm text-black-600 dark:text-gray-400 space-y-1">
+                                <li>• Wired & wireless network setup</li>
+                                <li>• Router & modem configuration</li>
+                                <li>• Network security & monitoring</li>
+                            </ul>
+                        </div>
+
+                        <div class="service-card bg-white dark:bg-gray-800 rounded-lg shadow-lg p-6 border border-gray-200 dark:border-gray-700">
+                            <div class="w-12 h-12 bg-primary rounded-lg flex items-center justify-center mb-4">
+                                <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"></path>
+                                </svg>
+                            </div>
+                            <h3 class="text-xl font-semibold mb-3">Internal Cleaning & Maintenance</h3>
+                            <p class="text-gray-800 dark:text-gray-400 mb-4">Professional internal cleaning for smoother performance and longer hardware life.</p>
+                            <ul class="text-sm text-black-600 dark:text-gray-400 space-y-1">
+                                <li>• Dust removal from components</li>
+                                <li>• Cleaning air vents and heat sinks</li>
+                                <li>• Reapplying thermal paste</li>
+                            </ul>
+                        </div>
+
+                        <div class="service-card bg-white dark:bg-gray-800 rounded-lg shadow-lg p-6 border border-gray-200 dark:border-gray-700">
+                            <div class="w-12 h-12 bg-primary rounded-lg flex items-center justify-center mb-4">
+                                <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"></path>
+                                </svg>
+                            </div>
+                            <h3 class="text-xl font-semibold mb-3">Custom PC Building</h3>
+                            <p class="text-gray-800 dark:text-gray-400 mb-4">Build your dream computer with our custom PC building service tailored to your needs.</p>
+                            <ul class="text-sm text-black-600 dark:text-gray-400 space-y-1">
+                                <li>• Custom gaming PC builds</li>
+                                <li>• Workstation assembly</li>
+                                <li>• Hardware upgrades & optimization</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- E-Commerce Product Section -->
+
+        <section id="products" class="bg-white dark:bg-gray-900 transition-colors duration-300">
+            <div class="container mx-auto px-4 py-20">
+                <!-- Section Header -->
+                <div class="text-center mb-16">
+                    <h2 class="text-3xl font-bold text-gray-800 dark:text-white mb-4">Our Products</h2>
+                    <p class="text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
+                        Discover our amazing collection of premium products designed to meet your needs and exceed your expectations.
+                    </p>
+                </div>
+
+                <!-- Product Gallery Container -->
+                <div class="relative">
+                    <!-- Navigation Buttons -->
+                    <button id="prevBtn" 
+                            class="absolute -left-3 top-1/2 -translate-y-1/2 z-20 bg-primary hover:bg-purple-700 text-white shadow-lg border-2 border-gray-200 dark:border-gray-700 rounded-full px-4 py-4 flex items-center gap-2 transition-all duration-200 disabled:opacity-50 disabled:cursor-not-allowed"
+                            disabled>
+                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
+                        </svg>
+                    </button>
+
+                    <button id="nextBtn" 
+                            class="absolute -right-3 top-1/2 -translate-y-1/2 z-20 bg-primary hover:bg-purple-700 text-white shadow-lg border-2 border-gray-200 dark:border-gray-700 rounded-full px-4 py-4 flex items-center gap-2 transition-all duration-200 disabled:opacity-50 disabled:cursor-not-allowed">
+                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                        </svg>
+                    </button>
+
+
+                    <!-- Products Container -->
+                    <div id="productContainer" 
+                        class="product-scroll flex gap-4 overflow-x-auto mx-8">
+                        <!-- Product cards will be generated here -->
+                    </div>
+                </div>
+
+                <!-- Scroll Indicators -->
+                <div class="flex justify-center mt-6">
+                    <div id="scrollIndicators" class="flex space-x-2">
+                        <!-- Indicators will be generated here -->
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="main-section">
+            <div class="py-20">
+                <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                    <div class="text-center mb-16">
+                        <h1 class="text-3xl font-bold mb-4">About</h1>
+                        <p class="text-xl text-gray-600 dark:text-gray-400">Your trusted partner for all computer and technology needs</p>
+                    </div>
+
+                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-16">
+                        <div>
+                            <h2 class="text-3xl font-bold mb-6">Why Choose Us?</h2>
+                            <div class="space-y-6">
+                                <div class="flex items-start">
+                                    <div class="w-8 h-8 bg-primary rounded-full flex items-center justify-center mr-4 mt-1">
+                                        <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                                        </svg>
+                                    </div>
+                                    <div>
+                                        <h3 class="text-lg font-semibold mb-2">Expert Technicians</h3>
+                                        <p class="text-gray-600 dark:text-gray-400">Our team of certified technicians brings years of experience and expertise to every job.</p>
+                                    </div>
+                                </div>
+
+                                <div class="flex items-start">
+                                    <div class="w-8 h-8 bg-primary rounded-full flex items-center justify-center mr-4 mt-1">
+                                        <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+                                        </svg>
+                                    </div>
+                                    <div>
+                                        <h3 class="text-lg font-semibold mb-2">Fast Service</h3>
+                                        <p class="text-gray-600 dark:text-gray-400">We provide fast service with minimal downtime to get you back up and running quickly.</p>
+                                    </div>
+                                </div>
+
+                                <div class="flex items-start">
+                                    <div class="w-8 h-8 bg-primary rounded-full flex items-center justify-center mr-4 mt-1">
+                                        <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1"></path>
+                                        </svg>
+                                    </div>
+                                    <div>
+                                        <h3 class="text-lg font-semibold mb-2">Affordable Rates</h3>
+                                        <p class="text-gray-600 dark:text-gray-400">We offer competitive and transparent pricing for all our services.</p>
+                                    </div>
+                                </div>
+
+                                <div class="flex items-start">
+                                    <div class="w-8 h-8 bg-primary rounded-full flex items-center justify-center mr-4 mt-1">
+                                        <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path>
+                                        </svg>
+                                    </div>
+                                    <div>
+                                        <h3 class="text-lg font-semibold mb-2">Satisfaction Guaranteed</h3>
+                                        <p class="text-gray-600 dark:text-gray-400">We guarantee satisfaction on all services and stand behind our work.</p>
+                                    </div>
+                                </div>
+
+                                <div class="flex items-start">
+                                    <div class="w-8 h-8 bg-primary rounded-full flex items-center justify-center mr-4 mt-1">
+                                        <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"></path>
+                                        </svg>
+                                    </div>
+                                    <div>
+                                        <h3 class="text-lg font-semibold mb-2">Latest Technologies</h3>
+                                        <p class="text-gray-600 dark:text-gray-400">We stay up-to-date with the latest technologies and industry best practices.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="bg-gray-50 dark:bg-gray-800 rounded-lg p-8">
+                            <h3 class="text-2xl font-bold mb-6">Our Mission</h3>
+                            <p class="text-gray-600 dark:text-gray-400 mb-6">
+                                Smart Tech Solutions is your trusted partner for all computer and technology needs. We provide comprehensive IT services for both businesses and individuals, ensuring your systems run smoothly and efficiently.
+                            </p>
+                            <p class="text-gray-600 dark:text-gray-400 mb-6">
+                                Our team of certified technicians brings years of experience and expertise to every job, from simple software installations to complex network setups and custom PC builds. We pride ourselves on delivering high-quality, reliable solutions tailored to your specific requirements.
+                            </p>
+                            <p class="text-gray-600 dark:text-gray-400">
+                                Whether you're facing technical issues, need an upgrade, or want to protect your valuable data, Smart Tech Solutions is here to help with prompt, professional service that you can count on.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="main-section">
+            <div class="py-20">
+                <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                    <div class="text-center mb-16">
+                        <h1 class="text-3xl font-bold mb-4">Contact Us</h1>
+                        <p class="text-xl text-gray-600 dark:text-gray-400">Have questions or need assistance? Get in touch with our team today.</p>
+                    </div>
+
+                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+                        <!-- Contact Information -->
+                        <div>
+                            <h2 class="text-2xl font-bold mb-8">Get In Touch</h2>
+                            
+                            <div class="space-y-6">
+                                <div class="flex items-start">
+                                    <div class="w-12 h-12 bg-primary rounded-lg flex items-center justify-center mr-4">
+                                        <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 11c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2z" />
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 21c4.97-5.333 7.5-9.167 7.5-12.5C19.5 5.014 16.486 2 12 2S4.5 5.014 4.5 8.5c0 3.333 2.53 7.167 7.5 12.5z" />
+                                        </svg>
+                                    </div>
+
+                                    
+                                    <div>
+                                        <h3 class="text-lg font-semibold mb-1">Location</h3>
+                                        <p class="text-gray-600 dark:text-gray-400">Nairobi</p>
+                                        <p class="text-gray-600 dark:text-gray-400">Kisumu</p>
+                                        <p class="text-gray-600 dark:text-gray-400">Embu</p>
+                                    </div>
+                                </div>
+
+                                <div class="flex items-start">
+                                    <div class="w-12 h-12 bg-primary rounded-lg flex items-center justify-center mr-4">
+                                        <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path>
+                                        </svg>
+                                    </div>
+                                    <div>
+                                        <h3 class="text-lg font-semibold mb-1">Phone</h3>
+                                        <p class="text-gray-600 dark:text-gray-400">+254 725574224</p>
+                                    </div>
+                                </div>
+
+                                <div class="flex items-start">
+                                    <div class="w-12 h-12 bg-primary rounded-lg flex items-center justify-center mr-4">
+                                        <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+                                        </svg>
+                                    </div>
+                                    <div>
+                                        <h3 class="text-lg font-semibold mb-1">Email</h3>
+                                        <p class="text-gray-600 dark:text-gray-400">smartechsolutions125@gmail.com</p>
+                                    </div>
+                                </div>
+
+                                <div class="flex items-start">
+                                    <div class="w-12 h-12 bg-primary rounded-lg flex items-center justify-center mr-4">
+                                        <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                                        </svg>
+                                    </div>
+                                    <div>
+                                        <h3 class="text-lg font-semibold mb-1">Business Hours</h3>
+                                        <div class="text-gray-600 dark:text-gray-400">
+                                            <p>Monday-Friday: 8AM - 6PM</p>
+                                            <p>Saturday: 9AM - 4PM</p>
+                                            <p>Sunday: Closed</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="mt-12 p-6 bg-primary rounded-lg text-white">
+                                <h3 class="text-xl font-bold mb-4">Ready to solve your tech problems?</h3>
+                                <p class="mb-4">Contact Smart Tech Solutions today for expert computer services and solutions.</p>
+                                <button onclick="scrollToContactForm()" class="bg-white text-primary px-6 py-2 rounded-lg font-semibold hover:bg-gray-100 transition-colors text-base">
+                                    Get Started
+                                </button>
+                            </div>
+                        </div>
+
+                    <!--contact form 2-->
+                    <div class="bg-white dark:bg-gray-800 rounded-lg shadow-lg p-4 sm:p-8 border border-gray-200 dark:border-gray-700 max-w-lg w-full mx-auto">
+                        <h2 class="text-2xl font-bold mb-6 text-center">Send Us a Message</h2>
+                        <form id="contactForm" action="https://formsubmit.co/ajax/26453bd12131ed80a841f83001194acc" method="POST" class="space-y-6">
+                            <input type="hidden" name="_subject" value="New message from Smart Tech Solutions website">
+                            <input type="hidden" name="_captcha" value="false">
+
+                            <div>
+                                <label for="name" class="block text-sm font-medium mb-2">Your Name</label>
+                                <input type="text" id="name" name="name" required placeholder="John Doe"
+                                    class="w-full px-4 py-3 text-base border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent bg-white dark:bg-gray-700 text-gray-900 dark:text-white">
+                            </div>
+
+                            <div>
+                                <label for="email" class="block text-sm font-medium mb-2">Email Address</label>
+                                <input type="email" id="email" name="email" required placeholder="john@example.com"
+                                    class="w-full px-4 py-3 text-base border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent bg-white dark:bg-gray-700 text-gray-900 dark:text-white">
+                            </div>
+
+                            <div>
+                                <label for="service" class="block text-sm font-medium mb-2">Service Needed</label>
+                                <select id="service" name="service" required
+                                        class="w-full px-4 py-3 text-base border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent bg-white dark:bg-gray-700 text-gray-900 dark:text-white">
+                                    <option value="">Select a service</option>
+                                    <option value="OS Installation">OS Installation</option>
+                                    <option value="Computer Troubleshooting">Computer Troubleshooting</option>
+                                    <option value="Software Installation">Software Installation</option>
+                                    <option value="Virus Removal & Security">Virus Removal & Security</option>
+                                    <option value="Computer Repair">Computer Repair</option>
+                                    <option value="Data Backup & Recovery">Data Backup & Recovery</option>
+                                    <option value="Network Setup">Network Setup</option>
+                                    <option value="Internal Cleaning & Maintenance">Internal Cleaning & Maintenance</option>
+                                    <option value="Custom PC Building">Custom PC Building</option>
+                                </select>
+                            </div>
+
+                            <div>
+                                <label for="message" class="block text-sm font-medium mb-2">Your Message</label>
+                                <textarea id="message" name="message" rows="5" required placeholder="Tell us about your requirements..."
+                                        class="w-full px-4 py-3 text-base border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent bg-white dark:bg-gray-700 text-gray-900 dark:text-white resize-vertical"></textarea>
+                            </div>
+
+                            <div id="formStatus" class="hidden"></div>
+                            <button id="submitBtn" type="submit" class="w-full bg-primary text-white py-3 px-6 rounded-lg font-semibold hover:bg-secondary transition-colors text-base">
+                                Send Message
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Courses Section -->
+        <section id="courses" class="main-section">
+            <div class="py-20">
+                <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                
+                <!-- Heading -->
+                <div class="text-center mb-16">
+                    <h1 class="text-3xl font-bold mb-4 text-gray-900 dark:text-white">Our Courses</h1>
+                    <p class="text-xl text-gray-600 dark:text-gray-400">Learn new skills from industry experts. Enroll today!</p>
+                </div>
+
+                <!-- Course Cards -->
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    
+                    <!-- Programming Fundamentals -->
+                    <div class="bg-white dark:bg-gray-800 rounded-lg shadow-lg p-6 border border-gray-200 dark:border-gray-700 flex flex-col">
+                    <h2 class="text-2xl font-semibold mb-2">Programming Fundamentals</h2>
+                    <p class="text-gray-800 dark:text-gray-400 mb-4">Master Python, JavaScript, and more. Perfect for beginners and intermediates.</p>
+                    <ul class="mb-4 text-gray-800 dark:text-gray-400 text-sm space-y-1">
+                        <li>• Python, JavaScript, HTML & CSS</li>
+                        <li>• Hands-on projects</li>
+                        <li>• Certificate on completion</li>
+                    </ul>
+                    <div class="mt-auto flex items-center justify-between">
+                        <button class="ml-4 bg-primary text-white px-4 py-2 rounded-lg font-semibold hover:bg-secondary transition-colors">Coming Soon!</button>
+                    </div>
+                    </div>
+
+                    <!-- Cyber Security Essentials -->
+                    <div class="bg-white dark:bg-gray-800 rounded-lg shadow-lg p-6 border border-gray-200 dark:border-gray-700 flex flex-col">
+                    <h2 class="text-2xl font-semibold mb-2">Cyber Security Essentials</h2>
+                    <p class="text-gray-800 dark:text-gray-400 mb-4">Protect yourself and your business. Learn ethical hacking, network security, and more.</p>
+                    <ul class="mb-4 text-gray-800 dark:text-gray-400 text-sm space-y-1">
+                        <li>• Ethical hacking basics</li>
+                        <li>• Network & data protection</li>
+                        <li>• Real-world scenarios</li>
+                    </ul>
+                    <div class="mt-auto flex items-center justify-between">
+                       <button class="ml-4 bg-primary text-white px-4 py-2 rounded-lg font-semibold hover:bg-secondary transition-colors">Coming Soon!</button>
+                    </div>
+                    </div>
+
+                    <!-- Web Development Bootcamp -->
+                    <div class="bg-white dark:bg-gray-800 rounded-lg shadow-lg p-6 border border-gray-200 dark:border-gray-700 flex flex-col">
+                    <h2 class="text-2xl font-semibold mb-2">Web Development Bootcamp</h2>
+                    <p class="text-gray-800 dark:text-gray-400 mb-4">Build modern websites and web apps from scratch using the latest technologies.</p>
+                    <ul class="mb-4 text-gray-800 dark:text-gray-400 text-sm space-y-1">
+                        <li>• HTML, CSS, JavaScript, React</li>
+                        <li>• Responsive design</li>
+                        <li>• Portfolio projects</li>
+                    </ul>
+                    <div class="mt-auto flex items-center justify-between">
+                        <button class="ml-4 bg-primary text-white px-4 py-2 rounded-lg font-semibold hover:bg-secondary transition-colors">Coming Soon!</button>
+                    </div>
+                    </div>
+
+                    <!-- Ethical Hacking Pro -->
+                    <div class="bg-white dark:bg-gray-800 rounded-lg shadow-lg p-6 border border-gray-200 dark:border-gray-700 flex flex-col">
+                    <h2 class="text-2xl font-semibold mb-2">Ethical Hacking Pro</h2>
+                    <p class="text-gray-800 dark:text-gray-400 mb-4">Deep dive into penetration testing, bug bounty programs, and advanced exploit techniques.</p>
+                    <ul class="mb-4 text-gray-800 dark:text-gray-400 text-sm space-y-1">
+                        <li>• Penetration testing</li>
+                        <li>• Bug bounty strategies</li>
+                        <li>• Advanced Kali Linux usage</li>
+                    </ul>
+                    <div class="mt-auto flex items-center justify-between">
+                        <button class="ml-4 bg-primary text-white px-4 py-2 rounded-lg font-semibold hover:bg-secondary transition-colors">Coming Soon!</button>
+                    </div>
+                    </div>
+
+                    <!-- Mobile App Development -->
+                    <div class="bg-white dark:bg-gray-800 rounded-lg shadow-lg p-6 border border-gray-200 dark:border-gray-700 flex flex-col">
+                    <h2 class="text-2xl font-semibold mb-2">Mobile App Development</h2>
+                    <p class="text-gray-800 dark:text-gray-400 mb-4">Create Android and iOS apps using Flutter and React Native.</p>
+                    <ul class="mb-4 text-gray-800 dark:text-gray-400 text-sm space-y-1">
+                        <li>• Cross-platform development</li>
+                        <li>• Dart, Flutter & React Native</li>
+                        <li>• Publish apps to stores</li>
+                    </ul>
+                    <div class="mt-auto flex items-center justify-between">
+                        <button class="ml-4 bg-primary text-white px-4 py-2 rounded-lg font-semibold hover:bg-secondary transition-colors">Coming Soon!</button>
+                    </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Company Info -->
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Smart Tech Solutions</h3>
+                    <p class="text-gray-400 mb-4">Your all time computer system solutions</p>
+                </div>
+
+                <!-- Services -->
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Services</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="#services" class="hover:text-white transition-colors">OS Installation</a></li>
+                        <li><a href="#services" class="hover:text-white transition-colors">Computer Troubleshooting</a></li>
+                        <li><a href="#services" class="hover:text-white transition-colors">Software Installation</a></li>
+                        <li><a href="#services" class="hover:text-white transition-colors">Virus Removal & Security</a></li>
+                        <li><a href="#services" class="hover:text-white transition-colors">Network Setup</a></li>
+                        <li><a href="#services" class="hover:text-white transition-colors">Data Backup & Recovery</a></li>
+                        <li><a href="#services" class="hover:text-white transition-colors">Custom PC Building</a></li>
+                    </ul>
+                </div>
+
+                <!-- Quick Links -->
+
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Quick Links</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="https://wa.me/254725574224" class="hover:text-white transition-colors" target="_blank">
+                            <i class="fab fa-whatsapp"></i>
+                            Whatsapp</a></li>
+                        <li><a href="facebook.com" class="hover:text-white transition-colors" target="_blank">
+                            <i class="fab fa-facebook"></i>
+                            Facebook</a></li>
+                        <li><a href="Instagram.com" class="hover:text-white transition-colors" target="_blank">
+                            <i class="fab fa-instagram"></i>
+                            Instagram</a></li>
+                        <li><a href="x.com" class="hover:text-white transition-colors" target="_blank">
+                            <i class="fab fa-x"></i>
+                            </a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact Info -->
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Contact Info</h4>
+                    <div class="space-y-2 text-gray-400">
+                        <p>Phone: +254 725574224</p>
+                        <p>Email: smartechsolutions125@gmail.com</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
+                <p>&copy; 2025 Smart Tech Solutions. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="settings 2.js"></script>
+    <script src="product 9.js"></script>
+    <script src="fireworks 3.js"></script>
+    <!--<script src="ballon.js"></script>-->
+
+</body>
+</html>
