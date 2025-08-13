@@ -31,14 +31,14 @@ const products = [
             {
                 id: 1,
                 name: "HP PROBOOK 450 G8",
-                description: "Intel core i5-1155u, 8GB RAM, 512GB SSD, Intel Iris Graphics, 15.6 Inch Display, 1080 Resolution, BacklitIntel core i5-1155u, 8GB RAM, 512GB SSD, Intel Iris Graphics, 15.6 Inch Display, 1080 Resolution, BacklitIntel core i5-1155u, 8GB RAM, 512GB SSD, Intel Iris Graphics, 15.6 Inch Display, 1080 Resolution, Backlit.",
+                description: "Intel core i5-1155u, 8GB RAM, 512GB SSD, Intel Iris Graphics, 15.6 Inch Display, 1080 Resolution, Backlit.",
                 image: "Lap 5.jpg",
                 price: "Ksh 48,000"
             },
             {
                 id: 1,
                 name: "DELL 3189/90 PENTIUM",
-                description: "Intel core i5-1155u, 8GB RAM, 512GB SSD, 4GB RAM, 128GB SSD, Touchscreen. Touchscreen4GB RAM, 128GB SSD, Touchscreen 4GB RAM, 128GB SSD, Touchscreen4GB RAM, 128GB SSD, Touchscreen4GB RAM, 128GB SSD, Touchscreen4GB RAM, 128GB SSD, Touchscreen4GB RAM, 128GB SSD, Touchscreen4GB RAM, 128GB SSD, Touchscreen4GB RAM, 128GB SSD, Touchscreen4GB RAM, 128GB SSD, Touchscreen.",
+                description: "Intel core i5, 4GB RAM, 128GB SSD, touchscreen.",
                 image: "Lap 6.jpg",
                 price: "Ksh 48,000"
             },
@@ -89,7 +89,7 @@ const products = [
                 name: "JBL Headset",
                 description: "Wireless, Pure Bass, Noise cancellation.",
                 image: "HeadP 1.jpg",
-                price: "Ksh 5,600"
+                price: "Ksh 5,000"
             },
             {
                 id: 1,
@@ -431,4 +431,5 @@ const products = [
 
 // Initialize gallery on page load
 document.addEventListener('DOMContentLoaded', initProductGallery);
+
 
